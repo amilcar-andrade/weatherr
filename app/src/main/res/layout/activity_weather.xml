@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.WeatherActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/temperatureF"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            tools:text="68 F"/>
+
+        <TextView
+            android:id="@+id/temperatureC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            tools:text="20 C"/>
+
+        <TextView
+            android:id="@+id/wind"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            tools:text="22 wind"/>
+
+        <ImageView
+            android:id="@+id/cloud"
+            android:padding="@dimen/padding_normal"
+            android:visibility="invisible"
+            android:src="@drawable/ic_cloud_black_24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/ic_cloud_black_24dp"/>
+
+        <Button
+            android:id="@+id/standard_btn"
+            android:text="@string/standard"
+            android:layout_width="match_parent"
+            android:onClick="onStandardDeviation"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/standard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_normal"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            tools:text="22 std dev"/>
+    </LinearLayout>
+
+</ScrollView>

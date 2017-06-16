@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">weatherr</string>
+    <string name="standard">Standard deviation</string>
+</resources>
